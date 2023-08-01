@@ -1,0 +1,15 @@
+<h1>Livros disponíves</h1>
+
+<div class="books-container">
+  <a href="/register"> Adicionar Novo Livro </a>
+
+  {{#each books}}
+  <a href="/books/{{this.id}}">
+  <div>
+    <p># {{this.id}} =</p> 
+     <p>{{this.title}}</p>
+    <p>- {{this.autor}}</p>
+  </div>
+  </a>
+  {{/each}}
+</div>
